@@ -1,0 +1,280 @@
+/* -------------------------------------公众样式---------------------------------------- */
+*{
+  margin: 0;padding: 0;list-style: none;
+  text-decoration: none;
+}
+body{
+  background: rgb(245,245,245);
+}
+h3{
+  font-size: 16px;font-weight: bold;
+}
+a{color: #333;cursor: pointer;}
+/* ----------------------------------------导航----------------------------------------- */
+#nav{
+  width: 100%;height: 65px;text-align: center;
+  border-bottom: 1px solid #ebebeb;
+  line-height: 65px;position: relative;
+  background: white;
+}
+#nav_content{
+  width: 1157px;margin: auto;
+}
+#nav_logo{
+  width: 186px;height: 37px;display: inline-block;
+  float: left;background: url(../img/logo.png);
+  margin: 13px;
+}
+.nav_right{
+  float: right;
+}
+.nav_right li{
+  float: left;margin: 0;
+  border-left: 1px solid #ebebeb;
+  width: 143px;height: 65px;
+}
+.nav_right .nav_search{
+  width: 240px;
+}
+.search_wrap{
+  display: inline-block;height: 65px;
+  line-height: 65px;padding-left: 25px;
+  position: relative;
+}
+.search_wrap input{
+  width: 185px;padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid #999999;
+  line-height: 32px;
+  height: 32px;
+  font-size: 14px;
+}
+.search_wrap .search-btn{
+  position: absolute;right: 15px;top: 21px;
+  background-image: url("../img/search.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 13px;height: 13px;cursor: pointer;
+}
+.nav_right li a{
+  height: 58px;line-height: 58px;
+  display: block;font-size: 16px;
+  font-weight: 400;width: 143px;
+  border-top: 7px solid #ffffff;
+  position: absolute;
+}
+/* -----------------------------最右边的按钮---------------------------- */
+#click{
+  width: 36px;height: 100px;
+  background: #fff url(../img/qr_bg.jpg) no-repeat left top;
+  border: solid 1px #ddd;position: fixed;
+  right: 20px;top: 300px;
+  overflow: hidden;z-index: 1000;
+}
+#click a{
+  width: 34px;font-size: 12px;display: block;
+  color: #ff6600;letter-spacing: 1px;
+  text-align: center;overflow: hidden;
+  cursor: pointer;
+}
+#click .qrcode{
+  height: 40px;margin: 2px auto;
+}
+.code_2d{
+  height: 220px;position: fixed;
+  background: rgb(245,245,245);
+  top: 300px;right: -139px;z-index: 100;
+  width: 205px;
+}
+.code_2d_box{
+  width: 203px;height: 218px;position: fixed;
+  top: 300px;right: -139px;background: #fff;
+  transition: 0.2s linear;text-align: center;
+  border: solid 1px #ddd;
+}
+.code_2d_box img{
+  width: 174px;height: 174px;
+  border: none;padding: 5px 5px 0px 5px;
+}
+.code_2d_box p{
+  font-size: 12px;color: #666;
+  line-height: 20px;letter-spacing: 1px;
+}
+#click .go{
+  height: 29px;line-height: 28px;
+  margin: 1px auto;
+}
+/* -----------------------------------------中间部分---------------------------------------- */
+#content{
+  width: 1157px;margin: auto;
+  padding-bottom: 80px;overflow: hidden;
+}
+/* -----------------------------大轮播图---------------------------- */
+#banner{
+  width: 100%;height: 280px;
+}
+.swiper-link {
+  width: 100%;height: 280px;
+  overflow: hidden;display: block;
+  position: absolute;top: 0;
+}
+.swiper-td-warp {
+  width: 100%;height: 52px;bottom: 0;
+  line-height: 52px;position: absolute;
+}
+.swiper-bg {
+  background: #e5e5e5;opacity: 0.7;
+  width: 100%;height: 52px;
+  position: absolute;bottom: 0;
+}
+.text-td {
+  margin-left: 20px;position: relative;
+  z-index: 100;color: #000000;font-size: 16px;
+}
+/* -----------------------------装机必备---------------------------- */
+.title_wrap1 {
+  line-height: 24px;padding-bottom: 15px;
+  height: 24px;margin-top: 30px;posi
+}
+#mustApps{
+  width: 100%;height: 415px;
+  position: relative;margin-bottom: 30px;
+  background: white;overflow: hidden;
+}
+#mustApps_bg{
+  width: 200%;height: 100%;position: absolute;
+  transition: .3s linear;left: 0;background: url(../img/1.jpg)
+}
+.left_list_wrap{
+  background: url(../img/btn-left.png);
+  left: 25px;width: 40px;height: 40px;
+  position: absolute;top: 45%;z-index: 100;
+  cursor: pointer;opacity: 0.3
+}
+.right_list_wrap{
+  background: url(../img/btn-right.png);
+  right: 25px;width: 40px;height: 40px;
+  position: absolute;top: 45%;cursor: pointer;
+  z-index: 100;opacity: 0.3
+}
+/* ------------------------------APP推荐---------------------------- */
+#content_must{
+  overflow: hidden;
+}
+/* --------------------APP左边--------------------- */
+#content_left{
+  float: left;
+}
+/* --------精品推荐--------- */
+.title_wrap2 {
+  line-height: 24px;padding-bottom: 15px;
+  height: 24px;margin-top: 30px;width: 833px;
+}
+#competitive{
+  width: 833px;height: 755px;
+  background: white;
+}
+/* --------选择APP--------- */
+#app_fr{
+  position: relative;width: 833px;background: white;
+  float: left;height: 755px;margin-top: 30px;
+}
+#app_fr .selector{
+  border-bottom: 1px solid #e5e5e5;
+  height: 40px;position: relative;
+  font-size: 18px;padding-bottom: 2px;
+  line-height: 40px;background: rgb(245,245,245);
+}
+.selector_btn{
+  display: block;float: left;
+  height: 100%;text-align: center;
+  position: relative;padding: 0 1em;
+  font-weight: 600;font-size: 16px;
+  margin: 0 30px;line-height: 35px;
+}
+.selector_btn:nth-child(1) i{
+  width: 24px;height: 24px;float: left;
+  background: url(../img/world.png) no-repeat scroll;
+  background-position: center center;
+  padding-top: 7px;margin-right: 10px;
+}
+.selector_btn:nth-child(2) i {
+  width: 30px;height: 30px;float: left;
+  background: url(../img/food.png) no-repeat scroll;
+  background-position: center center;
+  vertical-align: top;margin-right: 10px;
+}
+.selector_btn:nth-child(3) i {
+  width: 21px;height: 30px;float: left;
+  background: url(../img/clock.png) no-repeat scroll;
+  background-position: center center;
+  vertical-align: middle;margin-right: 10px;
+}
+.selector_btn:nth-child(4) i {
+  width: 28px;height: 28px;float: left;
+  background: url(../img/banknote.png) no-repeat scroll;
+  background-position: center center;
+  vertical-align: middle;margin-right: 10px;
+}
+/* ---------------------APP右边--------------------- */
+#content_right{
+  float: right;
+}
+/* --------热门推荐--------- */
+.title_wrap3 {
+  line-height: 24px;padding-bottom: 15px;
+  height: 24px;margin-top: 30px;width: 308px;
+  overflow: hidden;
+}
+.title_wrap3 h3{
+  float: left;
+}
+.app-rmbtn-wrap{
+  float: right;padding-right: 5px;
+}
+.app-rmbtn-wrap a {
+  margin: 0 12px;font-size: 14px;padding-bottom: 3px;
+}
+#hotApps{
+  width: 308px;height: 695px;background: white;
+}
+.selector_card{
+  width: 100%;height: 100%;
+}
+.selector_card ul{
+  width: 95%;margin: 0 auto;
+}
+
+/* ----------------------------------------------底部---------------------------------------------- */
+#footer{
+  padding: 50px 0 80px;width: 100%;
+  background: #243342;overflow: hidden;
+}
+.footer_box{
+  width: 1200px;margin: 0 auto;
+}
+.b_l{
+  float: left;width: 850px;
+}
+#footer p{
+  line-height: 31px;font-size: 14px;
+  font-family: "Helvetica";color: #aaa;
+}
+.b_l p a{
+  color: #aaa;
+}
+.b_l p a i{
+  margin: 15px 15px 0 0;
+  float: left;cursor: pointer;
+}
+.footer1{
+  background: url("../img/footer1.jpg") no-repeat scroll;
+  width: 74px;height: 28px;display: block;
+}
+.footer2{
+  background: url("../img/footer2.jpg") no-repeat scroll;
+  width: 74px;height: 28px;display: block;
+}
+.b_r{
+  float: right;width: 130px;
+}
